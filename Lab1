@@ -19,14 +19,14 @@ func prime(int a)[
 ]
 
 func sum(int n)[
-    as_soon_as(n>0)[
+    aslongas(n>0)[
         list list_n = empty.
         list_n =+ n.
         n is n-1.
     ]
 
     int i==0.
-    as_long_as(i<n)[
+    aslongas(i<n)[
         int suma  == 0 #randul nu se termina cu .
         suma == list_n[i]+suma. #functie apelata gresit
         i is {i+1}. # acolade in plus
