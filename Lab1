@@ -1,0 +1,45 @@
+func maxim(int a, int b, int c)[
+    int maximum == find_maxim(a,b,c).
+    show("The maximum number is:", maximum).
+]
+
+func minim(int a, int b, int c)[
+    int minim == find_minim(a,b,c).
+    show("The maximum number is:", minim).
+]
+
+func prime(int a)[
+    bool is_prime == check_prime(a).
+
+    if_it_is(is_prime == true)[
+        show("prime number").
+    ]
+    else_not[show("non prime number").]
+
+]
+
+func sum(int n)[
+    as_soon_as(n>0)[
+        list list_n = empty.
+        list_n =+ n.
+        n is n-1.
+    ]
+
+    int i==0.
+    as_long_as(i<n)[
+        int suma  == 0 #randul nu se termina cu .
+        suma == list_n[i]+suma. #functie apelata gresit
+        i is {i+1}. # acolade in plus
+        ]
+    show("The sum is:", suma).
+]
+
+
+defi main()[
+    (maxim(1, 2, 3)).
+    (minim(1, 2, 3)).
+    (prime(7)).
+    (sum(3)).
+
+    program_out.
+]
