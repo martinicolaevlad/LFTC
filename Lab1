@@ -35,7 +35,7 @@ func sum(int n)[
 ]
 
 
-defi main()[
+func main()[
     (maxim(1, 2, 3)).
     (minim(1, 2, 3)).
     (prime(7)).
