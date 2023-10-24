@@ -1,0 +1,50 @@
+Keywords:
+- VAR
+- BEGIN
+- END
+- IF
+- THEN
+- ELSE
+- WHILE
+- READ
+- WRITE
+- BOOLEAN
+- CHAR
+- INTEGER
+- REAL
+- ARRAY
+- OF
+
+Operators:
+- :=
+- +
+- -
+- *
+- /
+- =
+- <
+- <=
+- ==
+- <>
+- >=
+- >
+- AND
+- OR
+- NOT
+
+Separators:
+- ;
+- :
+- (
+- )
+- [
+- ]
+
+Identifiers:
+- (User-defined identifiers, e.g., variable names)
+
+Constants:
+- (Integers, floating-point numbers, and strings)
+
+Reserved Words:
+- (All the keywords listed above)

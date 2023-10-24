@@ -1,0 +1,55 @@
+Syntax:
+
+1.Variable Declarations:
+
+-> <declaration> ::= IDENTIFIER ":" <type>;
+
+2.Types:
+
+-> <type> ::= <type1> | <arraydecl>
+-> <type1> ::= BOOLEAN | CHAR | INTEGER | REAL
+-> <arraydecl> ::= ARRAY "[" <nr> "]" OF <type1>
+
+3.Compound Statements:
+
+-> <cmpdstmt> ::= BEGIN <stmtlist> END
+-> <stmtlist> ::= <stmt> | <stmt> ; <stmtlist>
+
+4.Statements:
+
+-> <stmt> ::= <simplstmt> | <structstmt>
+
+5.Simple Statements:
+
+-> <simplstmt> ::= <assignstmt> | <iostmt>
+
+6. Assignment Statement:
+
+-> <assignstmt> ::= IDENTIFIER := <expression>
+
+7.Expressions:
+
+-> <expression> ::= <expression> + <term> | <term>
+-> <term> ::= <term> * <factor> | <factor>
+-> <factor> ::= ( <expression> ) | IDENTIFIER
+
+8. Input and Output Statements:
+
+-> <iostmt> ::= READ | WRITE ( IDENTIFIER )
+
+9.Structural Statements:
+
+-> <structstmt> ::= <cmpdstmt> | <ifstmt> | <whilestmt>
+
+10.Conditional Statements (IF):
+
+-> <ifstmt> ::= IF <condition> THEN <stmt> [ELSE <stmt>]
+
+11.Loop Statements (WHILE):
+
+-> <whilestmt> ::= WHILE <condition> DO <stmt>
+
+12.Conditions and Relational Operators:
+
+-> <condition> ::= <expression> RELATION <expression>
+-> <RELATION> ::= < | <= | = | <> | >= | >

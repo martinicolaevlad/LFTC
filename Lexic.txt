@@ -1,0 +1,61 @@
+Specification (file Lexic.txt):
+
+	Alphabet:
+
+1.Upper and lower case letters (A-Z, a-z).
+2.Decimal digits (0-9).
+3.Special symbols:
+-> Operators: + - * / = ( ) ;
+-> Whitespace characters: space, tab, newline.
+
+	Lexic Categories:
+
+1.Identifiers:
+
+->A sequence of letters and digits where the first character is a letter.
+->Identifier rule: 'letter | letter {letter} {digit}'
+->'letter': "A" to "Z".
+->'digit': "0" to "9".
+
+2.Constants:
+
+a.Integer:
+
+->Rule: A sequence of digits.
+
+b.Floating-Point:
+
+->Rule: 'integer . integer' 
+->"integer": A sequence of digits.
+
+c.String:
+
+->Rule: ' "string" '
+->string: A sequence of characters enclosed in double quotes.
+->character: Any printable character, except for double quotes.
+
+3.Operators:
+
+-> +, -, *, /, =
+->Assignment: ':='
+
+4.Separators:
+
+-> (, ), ;
+
+5.Keywords:
+
+->'print', 'if', 'else', 'while', 'int', 'float'
+
+	Syntax:
+
+a.Assignment Statement:
+
+-> <identifier> := <expression>;
+
+b.Arithmetic Expressions:
+
+-> <expression> := <term> | <term> + <term> | <term> - <term>
+-> <term> := <factor> | <factor> * <factor> | <factor> / <factor>
+-> <factor> := <identifier> | <constant>
+-> <constant> := <integer> | <floating-point> | <string>
