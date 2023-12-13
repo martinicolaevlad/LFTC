@@ -1,0 +1,5 @@
+States: q0, q1, q2
+Alphabet: 0, 1
+Transitions: q0 -> q1 on 0, q0 -> q0 on 1, q1 -> q2 on 0, q1 -> q1 on 1, q2 -> q0 on 0, q2 -> q2 on 1
+InitialState: q0
+FinalStates: q0
